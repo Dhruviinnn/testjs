@@ -3,7 +3,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
-  const message = document.getElementById("message");
+  const message = document.getElemtById("message");
 
   // Simple demo validation
   if (username === "admin" && password === "123456") {
@@ -13,4 +13,5 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
     message.style.color = "red";
     message.textContent = "Invalid username or password!";
   }
+
 });
